@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find Cantor College in Sheffield with directions, location details and an interactive map to help you find us.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='mobile.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='desktop.css') }}" media="only screen and (min-width: 768px)">
+    <title>Cantor College</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><img src="{{ url_for('static', filename='Images/logo.small.png') }}" alt="Cantor College Logo"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('aboutus') }}">About Us</a></li>
+                <li><a href="{{ url_for('how_to_find_us') }}">How To Find Us</a></li>
+                <li><a href="{{ url_for('computing_courses') }}">Computing Courses</a></li>
+                <li><a href="{{ url_for('design_courses') }}">Design Courses</a></li>
+                <li><a href="{{ url_for('facilities') }}">Facilities</a></li>
+                <li><a href="{{ url_for('learning_resources') }}">Learning Resources</a></li>
+                <li><a href="{{ url_for('info_for_staff') }}">Information For Staff</a></li>
+                <li><a href="{{ url_for('info_for_students') }}">Information For Students</a></li>
+                <li><a href="{{ url_for('working_with_business') }}">Working With Business</a></li>
+                <li><a href="{{ url_for('contact_us') }}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="Title">
+        <div class="TitleImage">
+            <img src="/static/Images/IMG_1005.small.jpg" alt="An image of a building with a design with a yellow backround which reads Welcome to Sheffield" fetchpriority="high">
+        </div>
+        <div class="TitleText">
+        <h1>How to Find Us</h1>
+        </div>  
+    </section>
+
+    <main>
+        <div class="HowToFindUsMain">
+            <img src="/static/Images/CantorCollegelocation.png" alt="An image of a map showing the location of Canto College">
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footerp1">Cantor College Sheffield</p>
+        <p class="footerp2">Main Street Sheffield SC4 2BB</p>
+        <p class="footerp3">Tel:(01321) 2340 235</p> 
+        <p>Fax: (01321) 2340 236</p> 
+        <p>Email: info@cantorcollege.ac.uk</p>
+        <p class="footerp4">&copy; 2025 Cantor College. All rights reserved.</p>
+    </footer>
+</body>
+</html>

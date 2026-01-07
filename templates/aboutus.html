@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Cantor College, established in 1989, we specialise in Computing and Design and equip students with the knowledge and skills to achieve their career aims.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='mobile.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='desktop.css') }}">
+    <title>Cantor College</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><img src="/static/Images/logo.small.png" alt="Cantor College Logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <a href="/aboutus">About Us</a>
+                <li><a href="{{ url_for('how_to_find_us') }}">How To Find Us</a></li>
+                <li><a href="{{ url_for('computing_courses') }}">Computing Courses</a></li>
+                <li><a href="{{ url_for('design_courses') }}">Design Courses</a></li>
+                <li><a href="{{ url_for('facilities') }}">Facilities</a></li>
+                <li><a href="{{ url_for('learning_resources') }}">Learning Resources</a></li>
+                <li><a href="{{ url_for('info_for_staff') }}">Information For Staff</a></li>
+                <li><a href="{{ url_for('info_for_students') }}">Information For Students</a></li>
+                <li><a href="{{ url_for('working_with_business') }}">Working With Business</a></li>
+                <li><a href="{{ url_for('contact_us') }}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="Title">
+        <div class="TitleImage">
+            <img src="/static/Images/20230526_090714.small.jpg" alt="A colorful design where stripes of colours are layered on top of eachother horizontally." fetchpriority="high">
+        </div>
+        <div class="TitleText">
+        <h1>About Us</h1>
+        </div>  
+    </section>
+
+    <main class="PageContent">
+        <div class="PageContentContainer">
+        <p>
+            Cantor College was established in 1989 to specialize in Computing and Design.   At Cantor College, we want to give students the education they need to achieve their career aims, leaving them equipped with the knowledge, skills and experience to succeed. Cantor College gives you the opportunities that can give you the edge when you enter the world of work, through our teaching and our links to some of the world's leading researchers and employers. Our students have gone on to successful careers in a wide range of industries across the globe.  Whatever your ambitions, our learning and support can help to get the most out of your time with Cantor College, both as a student and in your future career.
+        </div>
+        </p>
+    </main>
+             
+
+    <footer class="footer">
+        <p class="footerp1">Cantor College Sheffield</p>
+        <p class="footerp2">Main Street Sheffield SC4 2BB</p>
+        <p class="footerp3">Tel:(01321) 2340 235</p> 
+        <p>Fax: (01321) 2340 236</p> 
+        <p>Email: info@cantorcollege.ac.uk</p>
+        <p class="footerp4">&copy; 2025 Cantor College. All rights reserved.</p>
+    </footer>
+</body>
+</html>

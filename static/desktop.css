@@ -1,0 +1,245 @@
+@media only screen and (min-width: 768px) {
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start; 
+        padding: 10px 15px;
+        background-color: #0A437C;
+        height: 100px
+    }
+
+    .logo img {
+        height: 100px;  
+        padding-top: 2px; 
+        padding-left: 2px;       
+        width: auto;
+        border-radius: 15px;
+        margin-right: 20px; 
+    }
+
+    .navbar {
+        margin-left: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;          
+        flex-direction: row;    
+        gap: 10px;              
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar li {
+        display: flex;   
+        flex-direction: column;       
+        align-items: center;
+        white-space: normal;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: #F5F5F5;
+        font-weight: 600;
+        font-size: 16px;  
+    }
+
+    .navbar a:hover {
+        color: #2B2B2B;
+    }
+
+    .HomePageImage1 {
+        position: relative;
+        width: 100%;
+    }
+
+    .HomePageImage1 img {
+        width: 100%;
+        height: 120vh;
+        display: block;
+        filter: brightness(70%);
+    }
+
+    .HomePageText {
+        position: absolute;
+        top: -5%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        color: #2B2B2B;
+        padding: 40px 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    section {
+        position: relative;
+    }
+
+    #course-container {
+        position: absolute;
+        bottom: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 20;
+    }
+
+    .course-box {
+        background: rgba(255, 255, 255, 0.9);
+        border: 3px solid #0A437C;
+        border-radius: 12px;
+        padding: 20px;
+        width: 320px;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    }
+
+    .course-box img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    .course-box h2 {
+        color: #0A437C;
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .course-box button {
+        background-color: #F28B30;
+        color: white;
+        border: none;
+        padding: 12px 22px;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .course-box button:hover {
+        background-color: #B92D36;
+        transform: translateY(-2px);
+    }
+
+    .Title {
+        position: relative;
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
+    }
+
+    .TitleImage {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Title img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        filter: brightness(60%);
+    }
+
+    .TitleText {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .PageContent {
+        padding: 40px 20px;
+        text-align: center;
+        background-color: #F5F5F5;
+    }
+
+    .PageContentContainer {
+        font-size: 1.5rem;
+        font-weight: 800;
+        max-width: 900px;
+        margin: auto;
+        line-height: 1.6;
+    }
+
+    .PageContentContainer h2 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+
+    .PageContentBig {
+        width: 100%;
+        padding: 40px 20px;
+        background-color: #f5f5f5;
+    }
+
+    .PageContentContainerBig {
+        max-width: 1400px;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        font-weight: 800;
+        line-height: 1.6;
+        color: #222;
+    }
+
+    .footer {
+        color: #FFFFFF;
+        background-color: #0A437C;
+        display: flex;
+        align-items: center;
+        padding: 10px 0px;
+        justify-content: space-evenly;
+    }
+
+    .HowToFindUsTitle {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .HowToFindUsMain {
+    display: flex;
+    justify-content: center;
+}
+
+.HowToFindUsMain img {
+    width: 80%;          
+    max-width: 820px;    
+    height: auto;
+}
+
+
+/*Courses HTML*/
+
+table {
+    border-collapse: collapse; width: 80%; margin: auto; 
+}
+
+th, td {
+    border: 1px solid #333; padding: 10px; text-align: left; 
+}
+
+th {
+    background-color: #0A437C; color: white; 
+}
+
+td {
+    background-color: #F5F5F5;
+}
+
+
+
+}
+
+h3{
+    font-weight: 200;
+}

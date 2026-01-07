@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cantor College Library and Resource Centre rules and guidelines for students and staff, including access, use of facilities, and membership information.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='mobile.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='desktop.css') }}" media="only screen and (min-width: 768px)">
+    <title>Cantor College</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><img src="{{ url_for('static', filename='Images/logo.small.png') }}" alt="Cantor College Logo"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('aboutus') }}">About Us</a></li>
+                <li><a href="{{ url_for('how_to_find_us') }}">How To Find Us</a></li>
+                <li><a href="{{ url_for('computing_courses') }}">Computing Courses</a></li>
+                <li><a href="{{ url_for('design_courses') }}">Design Courses</a></li>
+                <li><a href="{{ url_for('facilities') }}">Facilities</a></li>
+                <li><a href="{{ url_for('learning_resources') }}">Learning Resources</a></li>
+                <li><a href="{{ url_for('info_for_staff') }}">Information For Staff</a></li>
+                <li><a href="{{ url_for('info_for_students') }}">Information For Students</a></li>
+                <li><a href="{{ url_for('working_with_business') }}">Working With Business</a></li>
+                <li><a href="{{ url_for('contact_us') }}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="Title">
+        <div class="TitleImage">
+            <img src="static/Images/PXL_20250728_090818763.small.jpg" alt="An image of a classroom with multiple tables and chairs" fetchpriority="high">
+        </div>
+        <div class="TitleText">
+        <h1>Learning Recources</h1>
+        </div>  
+    </section>
+
+    <main class="PageContentBig">
+    <div class="PageContentContainerBig">
+        <h2>Learning Resources</h2>
+        <p>All students and staff of Cantor College are entitled to register as members of the Library and Resource Centre and use its facilities for study or work purposes. Access may also be granted to external users by arrangement (fees may apply).</p>
+
+        <h3>Introduction</h3>
+        <p>Use of the Library and Resource Centre implies acceptance of the rules outlined below. These rules are designed to protect all users and ensure the College operates efficiently. Breaches may result in disciplinary action.</p>
+
+        <h3>Access</h3>
+        <ul>
+            <li><strong>Membership:</strong> All individuals must follow registration procedures and agree to abide by Library rules.</li>
+            <li><strong>Non-members:</strong> May be admitted for study purposes by arrangement. Visitors must sign the Visitors' Book and may need identification.</li>
+            <li><strong>ID Cards:</strong> Cards are non-transferable. The person named is responsible for all borrowed items and replacement costs.</li>
+            <li><strong>Staff checks:</strong> Users may be asked to show ID or other identification when requested.</li>
+        </ul>
+
+        <h3>Use of Facilities</h3>
+        <ul>
+            <li><strong>Personal Belongings:</strong> The Library is not responsible for lost or damaged items. Belongings must not be left unattended.</li>
+            <li><strong>Quiet Conduct:</strong> Conversation should be minimal; silent areas must remain silent.</li>
+            <li><strong>Electronics:</strong> Personal stereos are prohibited; mobile phones must be off in study areas. Powering personal devices requires prior Health & Safety compliance verification.</li>
+            <li><strong>Food and Drink:</strong> Not allowed in public areas of the Library and Resource Centre.</li>
+            <li><strong>Facilities Use:</strong> Misuse of furniture, materials, or equipment may result in charges for repair or replacement.</li>
+        </ul>
+
+        <h3>External Services</h3>
+        <p>Access to non-members for study purposes may be arranged. Details are available in the External Services leaflet.</p>
+
+        <h3>Disciplinary Action</h3>
+        <p>Breaches of Library rules may result in withdrawal of access or further action through College regulations for students or staff procedures as outlined in the Staff Handbook.</p>
+
+    </div>
+</main>
+
+
+    <footer class="footer">
+        <p class="footerp1">Cantor College Sheffield</p>
+        <p class="footerp2">Main Street Sheffield SC4 2BB</p>
+        <p class="footerp3">Tel:(01321) 2340 235</p> 
+        <p>Fax: (01321) 2340 236</p> 
+        <p>Email: info@cantorcollege.ac.uk</p>
+        <p class="footerp4">&copy; 2025 Cantor College. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,249 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #0A437C;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px; 
+    z-index: 100;  
+}
+
+.logo img {
+    height: 100px;  
+    padding-top: 2px; 
+    padding-left: 2px;       
+    width: auto;
+    border-radius: 15px;
+}
+
+.navbar {
+    margin-left: 120px;
+    padding-right: 10px;
+    padding-right: 10px;
+    z-index: 50;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;  
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #F5F5F5;
+    font-weight: 600;
+    font-size: 14px;          
+}
+
+.navbar a:hover {
+    color: #2B2B2B;
+}
+
+.HomePageImage1 {
+    position: relative;
+    width: 100%;
+}
+
+.HomePageImage1 img {
+    width: 100%;
+    height: 60vh;              
+    display: block;
+    filter: brightness(70%);
+}
+
+
+.HomePageText {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.8rem;          
+    font-weight: bold;
+    text-align: center;
+    color: #2B2B2B;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;       
+    justify-content: center;    
+    min-height: 100vh;          
+}
+
+#course-container {
+    position: relative; 
+    margin: 10px auto 0 auto;
+    transform: none;
+}
+
+.course-box {
+    background: rgba(255, 255, 255, 0.9);
+    border: 3px solid #0A437C;
+    border-radius: 12px;
+    padding: 20px;
+    width: 90%;                 
+    max-width: 340px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    margin-bottom: 20px;
+}
+
+.course-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.course-box h2 {
+    color: #0A437C;
+    margin-bottom: 15px;
+}
+
+.course-box button {
+    background-color: #F28B30;
+    color: white;
+    border: none;
+    padding: 10px 18px;         
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.course-box button:hover {
+    background-color: #B92D36;
+    transform: translateY(-2px);
+}
+
+.Title {
+    position: relative;
+    width: 100%;
+    height: 150px;           
+    overflow: hidden;
+}
+
+.TitleImage {
+    width: 100%;
+    height: 100%;
+}
+
+.Title img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       
+    object-position: center; 
+    filter: brightness(60%);
+}
+
+.TitleText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1.8rem;
+}
+
+.PageContent, .PageContentBig {
+    padding: 30px 15px;
+    text-align: center;
+    background-color: #F5F5F5;
+}
+
+.PageContentContainer, .PageContentContainerBig {
+    font-size: 1.2rem;
+    font-weight: 600;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+.PageContentContainer h2 {
+    font-size: 2rem;
+}
+
+
+.footer {
+    color: #FFFFFF;
+    background-color: #0A437C;
+    display: flex;
+    flex-direction: column;      
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 8px;
+}
+
+.footer p {
+    margin: 4px 0;
+}
+
+.HowToFindUsTitle {
+    text-align: center;
+    font-size: 1.5rem;           
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.HowToFindUsMain {
+    display: flex;
+    justify-content: center;
+}
+
+.HowToFindUsMain img {
+    width: 80%;          
+    max-width: 520px;    
+    height: auto;
+}
+
+
+
+
+
+
+/*Courses HTML*/
+
+table {
+    border-collapse: collapse; width: 80%; margin: auto; 
+}
+
+th, td {
+    border: 1px solid #333; padding: 10px; text-align: left; 
+}
+
+th {
+    background-color: #0A437C; color: white; 
+}
+
+td {
+    background-color: #F5F5F5;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 900px; 
+}
+
+
+

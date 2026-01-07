@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="View all our courses we offer at Canto College including computing courses and design courses with all the information needed.">
+    <title>Courses - Cantor College</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='mobile.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='desktop.css') }}"
+          media="only screen and (min-width: 768px)">
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #0A437C;
+            color: white;
+        }
+        td {
+            background-color: #F5F5F5;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">
+        <img src="{{ url_for('static', filename='Images/logo.small.png') }}" alt="Cantor College Logo"> 
+    </div>
+    <nav class="navbar">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('aboutus') }}">About Us</a></li>
+                <li><a href="{{ url_for('how_to_find_us') }}">How To Find Us</a></li>
+                <li><a href="{{ url_for('computing_courses') }}">Computing Courses</a></li>
+                <li><a href="{{ url_for('design_courses') }}">Design Courses</a></li>
+                <li><a href="{{ url_for('facilities') }}">Facilities</a></li>
+                <li><a href="{{ url_for('learning_resources') }}">Learning Resources</a></li>
+                <li><a href="{{ url_for('info_for_staff') }}">Information For Staff</a></li>
+                <li><a href="{{ url_for('info_for_students') }}">Information For Students</a></li>
+                <li><a href="{{ url_for('working_with_business') }}">Working With Business</a></li>
+                <li><a href="{{ url_for('contact_us') }}">Contact Us</a></li>
+            </ul>
+        </nav>
+</header>
+
+<h1 style="text-align:center;">Courses at Cantor College</h1>
+
+<div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th>Course ID</th>
+                <th>Course Title</th>
+                <th>Course Type</th>
+                <th>Course Summary</th>
+                <th>Course Award Name</th>
+                <th>UCAS Code</th>
+                <th>UCAS Points</th>
+                <th>Year of Entry</th>
+                <th>Mode of Attendance</th>
+                <th>Study Length</th>
+                <th>Foundation Year</th>
+                <th>Course Subject</th>
+                <th>Recruiting</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for course in courses %}
+            <tr>
+                <td>{{ course.Course_ID }}</td>
+                <td>{{ course.CourseTitle }}</td>
+                <td>{{ course.CourseType }}</td>
+                <td>{{ course.CourseSummary }}</td>
+                <td>{{ course.CourseAwardName }}</td>
+                <td>{{ course.UcasCode }}</td>
+                <td>{{ course.UcasPoints }}</td>
+                <td>{{ course.YearOfEntry }}</td>
+                <td>{{ course.ModeOfAttendance }}</td>
+                <td>{{ course.StudyLength }}</td>
+                <td>{{ course.FoundationYear }}</td>
+                <td>{{ course.CourseSubject }}</td>
+                <td>{{ course.Recruiting }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
+

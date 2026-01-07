@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Cantor College student facilities, including advanced computing labs, design studios, innovation makerspaces, collaborative learning areas, library, career support, wellness centre, and on-campus housing.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='mobile.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='desktop.css') }}" media="only screen and (min-width: 768px)">
+    <title>Cantor College</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><img src="{{ url_for('static', filename='Images/logo.small.png') }}" alt="Cantor College Logo"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('aboutus') }}">About Us</a></li>
+                <li><a href="{{ url_for('how_to_find_us') }}">How To Find Us</a></li>
+                <li><a href="{{ url_for('computing_courses') }}">Computing Courses</a></li>
+                <li><a href="{{ url_for('design_courses') }}">Design Courses</a></li>
+                <li><a href="{{ url_for('facilities') }}">Facilities</a></li>
+                <li><a href="{{ url_for('learning_resources') }}">Learning Resources</a></li>
+                <li><a href="{{ url_for('info_for_staff') }}">Information For Staff</a></li>
+                <li><a href="{{ url_for('info_for_students') }}">Information For Students</a></li>
+                <li><a href="{{ url_for('working_with_business') }}">Working With Business</a></li>
+                <li><a href="{{ url_for('contact_us') }}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="Title">
+        <div class="TitleImage">
+            <img src="static/Images/PXL_20250728_091337626.small.jpg" alt="An image of a classroom with a wall that contains subject inspired circular shaped pictures" fetchpriority="high">
+        </div>
+        <div class="TitleText">
+        <h1>Information For Students</h1>
+        </div>  
+    </section>
+
+    <main class="PageContentBig">
+    <div class="PageContentContainerBig">
+
+        <h2>Information For Students</h2>
+        <p>At Cantor College, we are committed to providing students with world-class facilities and support to help you succeed in your studies and personal development.</p>
+
+        <h3>Our Facilities</h3>
+
+        <h4>1. Advanced Computing Labs</h4>
+        <p>Equipped with the latest hardware and software for programming, cybersecurity, data science, and more. Labs are accessible 24/7.</p>
+
+        <h4>2. Design Studios</h4>
+        <p>Creative spaces for graphic design, digital media, and product design, with professional software, high-end tablets, large-format printers, and collaborative areas.</p>
+
+        <h4>3. Innovation and Makerspace</h4>
+        <p>Tools for prototyping and invention, including 3D printers, laser cutters, and CNC machines. Ideal for turning ideas into real projects.</p>
+
+        <h4>4. Technology Sandbox</h4>
+        <p>An experimental space for VR, AR, and AI technologies, allowing students to explore emerging tech hands-on.</p>
+
+        <h4>5. Collaborative Learning Spaces</h4>
+        <p>Spaces designed for teamwork and problem-solving, equipped with smartboards, video conferencing tools, and flexible seating arrangements.</p>
+
+        <h4>6. Library and Resource Centre</h4>
+        <p>A comprehensive library with books, journals, digital resources, computer stations, quiet study areas, and online database access.</p>
+
+        <h4>7. Student Hub</h4>
+        <p>The social heart of campus, featuring a café, lounges, and recreational facilities for relaxation, socializing, and student-led activities.</p>
+
+        <h4>8. Career and Development Centre</h4>
+        <p>Career counseling, resume workshops, job placement services, and employer networking events to prepare you for the professional world.</p>
+
+        <h4>9. Fitness and Wellness Centre</h4>
+        <p>Gym, exercise studios, wellness services including yoga, meditation, and counseling to support your physical and mental well-being.</p>
+
+        <h4>10. On-Campus Housing</h4>
+        <p>Modern, comfortable residence halls with high-speed internet, study lounges, and common areas to support a vibrant student community.</p>
+
+        <h3>Experience Cantor College</h3>
+        <p>Our facilities are designed to enhance learning, foster creativity, and support personal growth. Explore, engage, and make the most of everything Cantor College offers.</p>
+
+    </div>
+</main>
+
+
+
+    <footer class="footer">
+        <p class="footerp1">Cantor College Sheffield</p>
+        <p class="footerp2">Main Street Sheffield SC4 2BB</p>
+        <p class="footerp3">Tel:(01321) 2340 235</p> 
+        <p>Fax: (01321) 2340 236</p> 
+        <p>Email: info@cantorcollege.ac.uk</p>
+        <p class="footerp4">&copy; 2025 Cantor College. All rights reserved.</p>
+    </footer>
+</body>
+</html>

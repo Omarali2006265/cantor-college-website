@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the facilities at Cantor College, including modern computing labs, lecture rooms, student work areas, catering facilities and on-site parking.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='mobile.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='desktop.css') }}" media="only screen and (min-width: 768px)">
+    <title>Cantor College</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><img src="{{ url_for('static', filename='Images/logo.small.png') }}" alt="Cantor College Logo"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('aboutus') }}">About Us</a></li>
+                <li><a href="{{ url_for('how_to_find_us') }}">How To Find Us</a></li>
+                <li><a href="{{ url_for('computing_courses') }}">Computing Courses</a></li>
+                <li><a href="{{ url_for('design_courses') }}">Design Courses</a></li>
+                <li><a href="{{ url_for('facilities') }}">Facilities</a></li>
+                <li><a href="{{ url_for('learning_resources') }}">Learning Resources</a></li>
+                <li><a href="{{ url_for('info_for_staff') }}">Information For Staff</a></li>
+                <li><a href="{{ url_for('info_for_students') }}">Information For Students</a></li>
+                <li><a href="{{ url_for('working_with_business') }}">Working With Business</a></li>
+                <li><a href="{{ url_for('contact_us') }}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="Title">
+        <div class="TitleImage">
+            <img src="static/Images/PXL_20250728_091027515.small.jpg" alt="An image of a colourful display consisting of a backruind of materials with unique designs and patterns and framed peices of similarly unique designs" fetchpriority="high">
+        </div>
+        <div class="TitleText">
+        <h1>Facilities</h1>
+        </div>  
+    </section>
+
+    <main class="PageContent">
+        <div class="PageContentContainer">
+        <p>
+            The College is located in the attractive and pleasantly refurbished Building. The building houses computing laboratories, and lecture/tutorial rooms. It has its own catering facilities and student work areas. There is also a car park to the back of the building.
+            
+        </p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footerp1">Cantor College Sheffield</p>
+        <p class="footerp2">Main Street Sheffield SC4 2BB</p>
+        <p class="footerp3">Tel:(01321) 2340 235</p> 
+        <p>Fax: (01321) 2340 236</p> 
+        <p>Email: info@cantorcollege.ac.uk</p>
+        <p class="footerp4">&copy; 2025 Cantor College. All rights reserved.</p>
+    </footer>
+</body>
+</html>

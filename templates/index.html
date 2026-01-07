@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Cantor College where we offer courses in Computing, Design and Networking, with expert teaching and excellent modern facilities.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='mobile.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='desktop.css') }}" media="only screen and (min-width: 768px)">
+    <title>Cantor College</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><img src="{{ url_for('static', filename='Images/logo.small.png') }}" alt="Cantor College Logo"></div>
+        <nav class="navbar"> 
+            <ul> 
+                <li><a href="{{ url_for('home') }}">Home</a></li> 
+                <li><a href="{{ url_for('aboutus') }}">About Us</a></li> <li><a href="{{ url_for('how_to_find_us') }}">How To Find Us</a></li> <li><a href="{{ url_for('computing_courses') }}">Computing Courses</a></li> 
+                <li><a href="{{ url_for('design_courses') }}">Design Courses</a></li> 
+                <li><a href="{{ url_for('facilities') }}">Facilities</a></li> 
+                <li><a href="{{ url_for('learning_resources') }}">Learning Resources</a></li> 
+                <li><a href="{{ url_for('info_for_staff') }}">Information For Staff</a></li> 
+                <li><a href="{{ url_for('info_for_students') }}">Information For Students</a></li> 
+                <li><a href="{{ url_for('working_with_business') }}">Working With Business</a></li> 
+                <li><a href="{{ url_for('contact_us') }}">Contact Us</a></li> 
+            </ul> 
+        </nav>
+    </header>
+
+      <main>
+        <section>
+            <div class="HomePageImage1">
+            <img src="{{ url_for('static', filename='Images/20230829_111351.small.jpg') }}" alt="An image of the front side of Cantor College" fetchpriority="high">
+           </div>
+
+            <div class="HomePageText">
+                <p>
+                    Computing • Design • Networking
+                </p>
+            </div>
+
+            <div id="course-container"></div>
+        </section>
+      </main>
+
+    <footer class="footer">
+        <p class="footerp1">Cantor College Sheffield</p>
+        <p class="footerp2">Main Street Sheffield SC4 2BB</p>
+        <p class="footerp3">Tel:(01321) 2340 235</p> 
+        <p>Fax: (01321) 2340 236</p> 
+        <p>Email: info@cantorcollege.ac.uk</p>
+        <p class="footerp4">&copy; 2025 Cantor College. All rights reserved.</p>
+    </footer>
+    <script src="{{ url_for('static', filename='index.js') }}" defer></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Partner with Cantor College to access expertise, innovation, and tailored business solutions. Discover training programs, R&D opportunities, consultancy, internships, and event collaborations.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='mobile.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='desktop.css') }}" media="only screen and (min-width: 768px)">
+    <title>Cantor College</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><img src="{{ url_for('static', filename='Images/logo.small.png') }}" alt="Cantor College Logo"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('aboutus') }}">About Us</a></li>
+                <li><a href="{{ url_for('how_to_find_us') }}">How To Find Us</a></li>
+                <li><a href="{{ url_for('computing_courses') }}">Computing Courses</a></li>
+                <li><a href="{{ url_for('design_courses') }}">Design Courses</a></li>
+                <li><a href="{{ url_for('facilities') }}">Facilities</a></li>
+                <li><a href="{{ url_for('learning_resources') }}">Learning Resources</a></li>
+                <li><a href="{{ url_for('info_for_staff') }}">Information For Staff</a></li>
+                <li><a href="{{ url_for('info_for_students') }}">Information For Students</a></li>
+                <li><a href="{{ url_for('working_with_business') }}">Working With Business</a></li>
+                <li><a href="{{ url_for('contact_us') }}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="Title">
+        <div class="TitleImage">
+            <img src="static/Images/PXL_20250829_105427034.small.jpg" alt="An image of a newly built part of the campus with two buildings on eachside and a huge artifact peaking through the gap" fetchpriority="high">
+        </div>
+        <div class="TitleText">
+        <h1>Working With Business</h1>
+        </div>  
+    </section>
+
+   <main class="PageContentBig">
+    <div class="PageContentContainerBig">
+
+        <h2>Partner with Cantor College: Unlock Expertise, Innovation, and Growth</h2>
+        <p>At Cantor College, we believe in the power of collaboration between education and industry. Our College offers a range of specialized services designed to support businesses in achieving their goals through cutting-edge expertise, innovation, and tailored solutions. With a focus on Computing, Design, and Technology, we are uniquely positioned to help your business thrive in an increasingly digital world.</p>
+
+        <h2>Our Services</h2>
+        <h3>1. Custom Training and Development Programs</h3>
+        <p>Empower your workforce with skills that matter. Our faculty can develop custom training programs that address your business's specific needs, whether in advanced computing technologies, creative design, or the latest in tech innovation. We offer flexible learning options, including on-site workshops, online modules, and blended learning experiences.</p>
+
+        <h3>2. Research and Development Partnerships</h3>
+        <p>Leverage the talent and creativity of our students and faculty by partnering with Cantor College on research and development projects. Whether you’re looking to explore new technologies, innovate your product line, or solve complex technical challenges, our R&D team is ready to collaborate with you.</p>
+
+        <h3>3. Design and Technology Consultancy</h3>
+        <p>Our experienced professionals and top-tier students provide consultancy services for projects ranging from web development and software engineering to product design and user experience optimization. We offer fresh perspectives and innovative approaches tailored to your business.</p>
+
+        <h3>4. Internships and Graduate Recruitment</h3>
+        <p>Gain access to a pool of highly skilled and motivated students ready to contribute to your business. Our internship and recruitment services connect you with top talent in computing, design, and technology.</p>
+
+        <h3>5. Event Hosting and Sponsorship</h3>
+        <p>Cantor College hosts events throughout the year, including hackathons, design challenges, and technology expos. Businesses can sponsor or collaborate in these events, gaining exposure and access to our community.</p>
+
+        <h2>Why Partner with Cantor College?</h2>
+        <ul>
+            <li><strong>Cutting-Edge Expertise:</strong> Our programs are at the forefront of industry trends.</li>
+            <li><strong>Innovation at the Core:</strong> We foster creativity and problem-solving.</li>
+            <li><strong>Tailored Solutions:</strong> Services are customized to your business needs.</li>
+            <li><strong>Future-Ready Talent:</strong> Students are equipped with both theoretical knowledge and practical skills.</li>
+        </ul>
+
+        <h2>Get in Touch</h2>
+        <p>Ready to explore how Cantor College can help your business grow? Contact our Business Services team today to discuss your needs and learn more about our offerings. We look forward to working with you to achieve your business goals.</p>
+
+    </div>
+</main>
+
+
+    <footer class="footer">
+        <p class="footerp1">Cantor College Sheffield</p>
+        <p class="footerp2">Main Street Sheffield SC4 2BB</p>
+        <p class="footerp3">Tel:(01321) 2340 235</p> 
+        <p>Fax: (01321) 2340 236</p> 
+        <p>Email: info@cantorcollege.ac.uk</p>
+        <p class="footerp4">&copy; 2025 Cantor College. All rights reserved.</p>
+    </footer>
+</body>
+</html>
